@@ -1,1 +1,1 @@
-require("lazy.lazy")
+require("lazy-nvim")
