@@ -32,8 +32,7 @@ return {
             vim.keymap.set("n", "<A-6>", ":BufferLineGoToBuffer 6<CR>", opts)
             vim.keymap.set("n", "<A-7>", ":BufferLineGoToBuffer 7<CR>", opts)
             vim.keymap.set("n", "<A-8>", ":BufferLineGoToBuffer 8<CR>", opts)
-            vim.keymap.set("n", "<A-9>", ":BufferLineGoToBuffer 9<CR>", opts)
-            vim.keymap.set("n", "<A-$>", ":BufferLineGoToBuffer -1<CR>", opts)
+            vim.keymap.set("n", "<A-9>", ":BufferLineGoToBuffer -1<CR>", opts)
         end
     }
 }
