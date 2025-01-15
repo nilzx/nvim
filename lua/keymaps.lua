@@ -26,20 +26,18 @@ keymap("n", "<leader>O", "O<Esc>", opts)    -- insert new line above
 keymap("n", "<leader>nh", ":nohlsearch<CR>", opts)    -- clear search highlight
 keymap("n", "<Tab>", ">>", opts)    -- indent right
 keymap("n", "<S-Tab>", "<<", opts)    -- indent left
-keymap("n", "<leader>j", "10j", opts)   -- move 10 lines down
-keymap("n", "<leader>k", "10k", opts)   -- move 10 lines up
-keymap("n", "<leader>l", "10e", opts)   -- move 10 words end
-keymap("n", "<leader>h", "10b", opts)   -- move 10 words begin
 -- Window Navigation
-keymap("n", "<A-h>", "<C-w>h", opts)    -- move to left window
-keymap("n", "<A-j>", "<C-w>j", opts)    -- move to down window
-keymap("n", "<A-k>", "<C-w>k", opts)    -- move to up window
-keymap("n", "<A-l>", "<C-w>l", opts)    -- move to right window
-keymap("n", "<leader>wh", "<C-w>s", opts)    -- split window horizontally
-keymap("n", "<leader>wv", "<C-w>v", opts)    -- split window vertically
-keymap("n", "<A-w>", "<C-w>q", opts)    -- close window
-keymap("n", "<leader>wq", "<C-w>q", opts)    -- close window
-keymap("n", "<leader>wc", "<C-w>c", opts)    -- close window
+keymap("n", "<leader>h", "<C-w>h", opts)    -- move to left window
+keymap("n", "<leader>j", "<C-w>j", opts)    -- move to down window
+keymap("n", "<leader>k", "<C-w>k", opts)    -- move to up window
+keymap("n", "<leader>l", "<C-w>l", opts)    -- move to right window
+keymap("n", "<leader>s", "<C-w>s", opts)    -- split window horizontally
+keymap("n", "<leader>v", "<C-w>v", opts)    -- split window vertically
+keymap("n", "<leader>q", "<C-w>q", opts)    -- close window
+-- Buffer --
+keymap("n", "<leader>bn", ":bn<CR>", opts)    -- close window
+keymap("n", "<leader>bp", ":bp<CR>", opts)    -- close window
+keymap("n", "<leader>bd", ":bd<CR>", opts)    -- close window
 -- Resize with arrows
 -- delta: 2 lines
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
