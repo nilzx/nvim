@@ -10,6 +10,7 @@ return {
                 silent = true,       -- do not show message
             }
             vim.keymap.set("n", "<leader>t", ":NvimTreeOpen<CR>", opts)
+            vim.keymap.set("n", "<A-0>", ":NvimTreeFocus<CR>", opts)
         end
     }
 }
